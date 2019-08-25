@@ -1,1 +1,1 @@
-# Códigos dos Laboratório da disciplina MATA40 - Estrutura de Dados e Algoritmos I
+# Códigos dos Laboratórios da disciplina MATA40 - Estrutura de Dados e Algoritmos I
