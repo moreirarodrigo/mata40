@@ -2,10 +2,10 @@
 
 /*************************************************/
 
-typedef struct vetor{ 	
-	float V[MAX]; // Tamanho do vetor, definido pela constante MAX
-	int MaxElem; // Número máximo de elementos do vetor (não seria o mesmo que MAX?)
-	int numElem; // Número de elementos (com algum valor) dentro do vetor
+typedef struct vetor { 	
+	float V[MAX];
+	int MaxElem;
+	int numElem;
 } tVetor;
 
 //* ***********************************************
