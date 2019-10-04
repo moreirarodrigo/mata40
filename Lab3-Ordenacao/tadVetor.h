@@ -1,12 +1,12 @@
-
 #define MAX 100
 
 /* *********************************************** */
 
-typedef struct vetor	{ 	int V[MAX];
-							int MaxElem;
-							int numElem;
-						} tVetor;
+typedef struct vetor { 	
+	int V[MAX];
+	int MaxElem;
+	int numElem;
+} tVetor;
 
 //* ***********************************************
 //* Recebe o vetor V vazio e define um vetor vazio
@@ -35,14 +35,14 @@ void imprimeVetor(tVetor V);
 //* metodo de Selecao.
 //* *********************************************** 
 
-void selectionSort (tVetor *v);
+int selectionSort (tVetor *v);
 
 //* ***********************************************
 //* Recebe o vetor V e ordena seus elementos pelo 
 //* metodo de Insercao.
 //* *********************************************** 
 
-void insertSort (tVetor *v);
+int insertSort (tVetor *v);
 
 
 //* ***********************************************
@@ -50,7 +50,7 @@ void insertSort (tVetor *v);
 //* metodo da Bolha.
 //* *********************************************** 
 
-void bubbleSort (tVetor *v);
+int bubbleSort (tVetor *v);
 
 bool checkOrdenado (tVetor *v);
 

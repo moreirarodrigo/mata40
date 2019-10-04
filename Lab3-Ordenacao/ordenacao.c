@@ -15,7 +15,7 @@
 int main (int argc, char * argv[]) {
 
 tVetor	vet;
-long int 	n=MAX;
+long int n=MAX;
 
 	srand(time(NULL));
 
@@ -24,8 +24,8 @@ long int 	n=MAX;
 		if ( (n <= 0) && (n > MAX) ) {
 			printf("ERROR: n <= 0 && %d > %ld\n", MAX, n);
 			exit(-1);
-			}
 		}
+	}
 
 	printf("n = %ld\n", n);
 
@@ -35,11 +35,12 @@ long int 	n=MAX;
 	if (!preencheVetorAleatorio(&vet, n)) {
 		printf("ERRO no preenchimento do vetor\n");
 		exit(-1);
-		}
-	imprimeVetor(vet);
+	}
+	// imprimeVetor(vet);
 	printf("Feito!\n");
 
 	printf("=====================================\n");
+	
 	// printf("Ordenando com o metodo de Bolha... \n");
 	// bubbleSort(&vet);
 	// printf("Feito!\n");
@@ -51,13 +52,14 @@ long int 	n=MAX;
 	printf("Ordenando com o metodo de Insercao... \n");
 	insertSort(&vet);
 	printf("Feito!\n");
-	if(checkOrdenado(&vet)){
+
+	if(checkOrdenado(&vet)) {
 		printf("O vetor esta ordenado\n");
 	}else{
 		printf("ERRO na ordenacao do vetor\n");
 	}
 	printf("=====================================\n");
 
-	imprimeVetor(vet);
+	// imprimeVetor(vet);
 	return 0;
 }

@@ -24,8 +24,7 @@ bool defineVetor(tVetor* V, int n) {
 /* *********************************************** */
 bool preencheVetorAleatorio(tVetor* V, int n) {
 
-int 	i,
-		num;
+	int i,num;
 
 	if (V->MaxElem > n)
 		return false;
@@ -42,7 +41,7 @@ int 	i,
 /* *********************************************** */
 void imprimeVetor(tVetor V) {
 
-int i;
+	int i;
 
 	printf("------------------------------\n");
 
@@ -58,7 +57,8 @@ int i;
 
 /* *********************************************** */
 /* *********************************************** */
-void selectionSort (tVetor *v) {
+int selectionSort (tVetor *v) {
+	int cont = 0;
 	for(int i = 0; i < v->numElem-1; i++){
 		int min = i;
 		for(int j = i+1; j < v->numElem; j++){
@@ -69,43 +69,50 @@ void selectionSort (tVetor *v) {
 				int temp = v->V[i];
 				v->V[i] = v->V[j];
 				v->V[j] = temp;
+				cont++;
 			}
 		}
 	}
-	return;
+	return printf("N de trocas: %d\n", cont);
 }
 
 /* *********************************************** */
 /* *********************************************** */
-void insertSort (tVetor *v) {
+int insertSort (tVetor *v) {
+	int cont = 0;
 	for (int i = 1; i < v->numElem; i++) {
 		int pivo = v->V[i];
 		int j = i - 1;
 		while(j >= 0 && v->V[j] > pivo){
 			v->V[j+1] = v->V[j];
 			j = j - 1;
+			cont++;
 		}
 		v->V[j+1] = pivo;
 	}
-	return;
+	return printf("N de trocas: %d\n", cont);
 }
 
 /* *********************************************** */
 /* *********************************************** */
-void bubbleSort (tVetor *v) {
+int bubbleSort (tVetor *v) {
+	int cont = 0;
 	for (int i = 0; i < v->numElem-1; i++) {
 		for (int j = i+1; j < v->numElem; j++) {
 			if(v->V[i] > v->V[j]){
 				int temp = v->V[i];
 				v->V[i] = v->V[j];
 				v->V[j] = temp;
+				cont++;
 			}
 		}
 	}
-	return;
+	return printf("N de trocas: %d\n", cont);
 }
 
-bool checkOrdenado(tVetor *v){
+/* *********************************************** */
+/* *********************************************** */
+bool checkOrdenado(tVetor *v) {
 	if(v->numElem == 0 || v->numElem == 1){
 		return true;
 	}
