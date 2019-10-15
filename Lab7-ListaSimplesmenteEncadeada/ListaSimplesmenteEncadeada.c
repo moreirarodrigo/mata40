@@ -9,13 +9,24 @@
 // ******                                   ******
 // ***********************************************
 
+void initLista(tListaEncadeada* L) {
+
+	L->numElem = 0;
+	L->inicio = SENTINELA;
+	
+}
+
+// ***********************************************
+// ******                                   ******
+// ***********************************************
+
 tNo* alocaNo(int valor) {
 
 	tNo* novo = (tNo *)malloc(sizeof(tNo));
 
 	if (novo != NULL) {
 		novo->dado = valor;
-		novo->prox = NULL;
+		novo->prox = SENTINELA;
 	}
 
 	return novo;
@@ -25,9 +36,29 @@ tNo* alocaNo(int valor) {
 // ******                                   ******
 // ***********************************************
 
-void initLista(tListaEncadeada* L) {
-	L->inicio = NULL;
-	L->numElem = 0;
+bool insereFinalLista(tListaEncadeada* L, int valor) {
+
+	tNo* novo = alocaNo(valor);
+
+	if (novo == NULL)
+		return false;
+
+	tNo* ultimo = L->inicio;
+
+	if (ultimo == SENTINELA)		// Lista Vazia
+		L->inicio = novo;	
+
+	else { 							// Lista nao Vazia
+
+		while (ultimo->prox != SENTINELA)
+			ultimo = ultimo->prox;
+
+		ultimo->prox = novo;
+		}
+
+	L->numElem++;
+
+	return true;
 }
 
 // ***********************************************
@@ -35,16 +66,20 @@ void initLista(tListaEncadeada* L) {
 // ***********************************************
 
 void imprimeLista(tListaEncadeada L) {
-	tNo * noCor;
-	if(L.inicio == NULL){
-		printf("Lista Vazia");
-		return;
-	}
-	noCor = L.inicio;
-	while(noCor!=NULL){
-		printf("%d", noCor->dado);
-		noCor = noCor->prox;
-	}
+
+	tNo* pos = L.inicio;
+
+	printf("========================\n");
+	
+	if (pos == SENTINELA)
+		printf("LISTA VAZIA !!!\n");
+	else
+		while (pos != SENTINELA) {
+			printf("%d\n", pos->dado);
+			pos = pos->prox;
+		}
+	printf("========================\n");
+
 }
 
 // ***********************************************
@@ -61,7 +96,7 @@ void limpaLista(tListaEncadeada* L) {
 
 int tamLista(tListaEncadeada L) {
 
-    return 0;
+    return L.numElem;
 }
 
 // ***********************************************
@@ -69,18 +104,8 @@ int tamLista(tListaEncadeada L) {
 // ***********************************************
 
 bool buscaElemento(tListaEncadeada L, int valor) {
-     tNo* noCor;
-	 if(L.inicio == NULL){
-		 return false;
-	 }
-	 noCor = L.inicio;
-	 while((noCor!=NULL) && (noCor->dado != valor)){
-		 noCor = noCor->prox;
-	 }
-	 if(noCor == NULL){
-		 return false;
-	 }
-    return true;
+     
+    return false;
 }
 
 // ***********************************************
@@ -97,23 +122,9 @@ bool insereOrdenadoLista(tListaEncadeada* L, int valor) {
 // ***********************************************
 
 bool insereInicioLista(tListaEncadeada* L, int valor) {
-	tNo* novo;
-	novo = alocaNo(valor);
-	if(novo == NULL){
-		return false;
-	}
-	novo->prox = L->inicio;
-	L->inicio = novo;
+
+
 	return true;
-}
-
-// ***********************************************
-// ******                                   ******
-// ***********************************************
-
-bool insereFinalLista(tListaEncadeada* L, int dado) {
-
-	return false;
 }
 
 // ***********************************************
@@ -121,26 +132,8 @@ bool insereFinalLista(tListaEncadeada* L, int dado) {
 // ***********************************************
 
 bool removeElemento(tListaEncadeada* L, int valor) {
-	tNo* noCor;
-	tNo* noAnt;
-	if(L->inicio == NULL){
-		return false;
-	}
-	noCor = L->inicio;
-	noAnt = NULL;
-	while((noCor!=NULL) && (noCor->dado!=valor)){
-		noAnt=noCor;
-		noCor=noCor->prox;
-	}
-	if(noCor==NULL){
-		return false;
-	}
-	if(noAnt==NULL){
-		L->inicio=noCor->prox;
-	}else{
-		noAnt->prox = noCor->prox;
-	}
-	free(noCor);
-	return true;
+
+	return false;
+
 }
 
