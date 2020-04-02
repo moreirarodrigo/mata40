@@ -1,0 +1,92 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/SOIL/SOIL.h
+
+../inc/SOIL/image_DXT.h
+
+../inc/SOIL/image_helper.h
+
+../inc/SOIL/stb_image_aug.h
+stdio.h
+-
+
+../inc/SOIL/stbi_DDS_aug.h
+
+../inc/SOIL/stbi_DDS_aug_c.h
+
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/SOIL.c
+windows.h
+-
+wingdi.h
+-
+GL/gl.h
+-
+OpenGL/gl.h
+-
+Carbon/Carbon.h
+-
+GL/gl.h
+-
+GL/glx.h
+-
+SOIL/SOIL.h
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/SOIL/SOIL.h
+SOIL/stb_image_aug.h
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/SOIL/stb_image_aug.h
+SOIL/image_helper.h
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/SOIL/image_helper.h
+SOIL/image_DXT.h
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/SOIL/image_DXT.h
+stdlib.h
+-
+string.h
+-
+
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/image_DXT.c
+SOIL/image_DXT.h
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/SOIL/image_DXT.h
+math.h
+-
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/image_helper.c
+SOIL/image_helper.h
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/SOIL/image_helper.h
+stdlib.h
+-
+math.h
+-
+
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/stb_image_aug.c
+SOIL/stb_image_aug.h
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/SOIL/stb_image_aug.h
+math.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+assert.h
+-
+stdarg.h
+-
+SOIL/stbi_DDS_aug.h
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/SOIL/stbi_DDS_aug.h
+SOIL/stbi_DDS_aug_c.h
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/src/SOIL/stbi_DDS_aug_c.h
+

@@ -1,0 +1,3 @@
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/build/CMakeFiles/soil.dir
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/build/CMakeFiles/edit_cache.dir
+C:/Users/KATIANE/Desktop/Rodrigo/UFBA/Disciplinas/Ciencia da Computacao/MATA40 - Estruturas de Dados I/Laboratorios/CodigoBase/external/SOIL/build/CMakeFiles/rebuild_cache.dir
