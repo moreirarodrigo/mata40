@@ -18,27 +18,26 @@
 -   **Arranjo:**
     Estrutura de dados que armazena uma coleção de elementos de tal forma que cada um dos elementos pode ser identificado por um ou mais índices. Arranjos unidimensionais são usualmente denominados **vetores**, enquanto que aqueles de dimensão maior ou igual a  2  são chamados de **matrizes**. Usualmente, todos os elementos do arranjo possuem mesmo tamanho e tipo de dados. Eles podem ser acessados individualmente e instantaneamente por sua posição no arranjo, dada por um índice. O índice geralmente utiliza uma sequência de números inteiros, mas o índice pode ter qualquer valor ordinal. Em linguagem C o índice de um vetor sempre inicia em 0. A seguir um exemplo, em linguagem C, de declaração e acesso aos elementos de um vetor.
 
-        ```c
-        int a[50]; // Vetor
-        a[20] = 20;
-        a[44] = a[12] * a[33];
-        ```
+    ```c
+    int a[50];
+    a[20] = 20;
+    a[44] = a[12] * a[33];
+    ```
 
 -   **Registro:**
     Estrutura de dados que armazena um grupo de elementos, cada qual associado a um identificador, que podem ser acessados de forma agrupada. Cada elemento do registro é denominado campo. Seu acesso a cada campo pode ser feito a partir do operador. (ponto). Os campos não precisam ter mesmo tamanho ou mesmo tipo, daí sua denominação de agregado heterogêneo. Em linguagem C um registro é identificado pela palavra reservada **struct**. A seguir um exemplo de declaração de um registro e acesso aos seus campos.
 
-        ```c
-        struct pessoa {
-          int matricula;
-          char* nome;
-          float salario;
-        };
-
-        struct pessoa p;
-        p.matricula = 123;
-        p.nome = "Maria";
-        p.salario = 13000.89;
-        ```
+    ```c
+    struct pessoa {
+      int matricula;
+      char* nome;
+      float salario;
+    };
+    struct pessoa p;
+    p.matricula = 123;
+    p.nome = "Maria";
+    p.salario = 13000.89;
+    ```
 
 **Roteiro:**
 

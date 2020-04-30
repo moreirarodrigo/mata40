@@ -21,11 +21,11 @@
 -   **Algoritmos de ordenação básicos:**
     Os algoritmos de ordenação mais básicos se baseiam na comparação quase que exaustiva das chaves do conjunto entre si. Podemos destacar 3 algoritmos desse tipo<a href="#ftnt"><sup>1</sup></a>:
 
-        1. **Seleção:** A cada passo deste algoritmo uma chave é posicionada. Procura-se pela posição da menor chave no conjunto. Encontrada a posição, a chave é trocada com a posição 0 do vetor. O processo é repetido a partir da posição 1, que será trocada pela menor chave do conjunto restante. O processo termina quando a última chave é alcançada.
+    1. **Seleção:** A cada passo deste algoritmo uma chave é posicionada. Procura-se pela posição da menor chave no conjunto. Encontrada a posição, a chave é trocada com a posição 0 do vetor. O processo é repetido a partir da posição 1, que será trocada pela menor chave do conjunto restante. O processo termina quando a última chave é alcançada.
 
-        2. **Inserção:** A idéia é similar a um jogador de cartas que recebe uma carta por vez e tenta inseri-la em sua mão, que tem um conjunto já ordenado de cartas. Percorre-se o vetor, começando com o índice 1. Cada nova posição é comparada com as chaves a esquerda, que já estarão ordenadas. A nova chave troca de lugar com sua vizinha a esquerda enquanto esta for maior que a chave inserida.
+    2. **Inserção:** A idéia é similar a um jogador de cartas que recebe uma carta por vez e tenta inseri-la em sua mão, que tem um conjunto já ordenado de cartas. Percorre-se o vetor, começando com o índice 1. Cada nova posição é comparada com as chaves a esquerda, que já estarão ordenadas. A nova chave troca de lugar com sua vizinha a esquerda enquanto esta for maior que a chave inserida.
 
-        3. **Bolha:** Compara as chaves aos pares efetuando trocas toda a vez que k<sub>i</sub> > k<sub>i+1</sub>. A cada passo a maior chave do conjunto é posicionada e o processo se repete excluindo a chave já posicionada. Caso uma etapa do processo de comparação não efetue nenhuma troca de chaves o processo de ordenação é dado por concluído.
+    3. **Bolha:** Compara as chaves aos pares efetuando trocas toda a vez que k<sub>i</sub> > k<sub>i+1</sub>. A cada passo a maior chave do conjunto é posicionada e o processo se repete excluindo a chave já posicionada. Caso uma etapa do processo de comparação não efetue nenhuma troca de chaves o processo de ordenação é dado por concluído.
 
 ---
 
